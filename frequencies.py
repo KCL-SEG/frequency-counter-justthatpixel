@@ -1,18 +1,20 @@
 """Frequencies function."""
 """ENTER YOUR SOLUTION HERE!"""
 
-def frequencies(items):
+def frequencies(my_list):
     frequencies = {}
     # Your code goes here
-    for item in items:
-        if (item in frequencies):
-            frequencies[item] += 1
+    for items in my_list:
+        if(isinstance(items,str)):
+         frequencies[items] = my_list.count(items)
         else:
-            frequencies[item] = 1
- 
-    for key, value in frequencies.items():
-        print ("% d : % d"%(key, value))
-        print("Hello world")
+         a= str(items)
+         frequencies[a] = my_list.count(items)
+        
+
+     
+   # for key, value in frequencies.items():
+     #   print ("% d : % d"%(key, value))
    
 
 
